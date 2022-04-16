@@ -1,0 +1,15 @@
+server:
+  port: 9503
+
+eureka:
+  instance:
+    hostname: eureka9503.com
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:9502/eureka/,http://localhost:9501/eureka/
+
+spring:
+  application:
+    name: eureka9503
